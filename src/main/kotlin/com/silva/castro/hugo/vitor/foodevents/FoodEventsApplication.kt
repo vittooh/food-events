@@ -4,9 +4,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class FoodEventsApplication {
+class FoodEventsApplication
 
-	fun main(args: Array<String>) {
-		runApplication<FoodEventsApplication>(*args)
-	}
+fun main(args: Array<String>) {
+    println("FIRE!!")
+    runApplication<FoodEventsApplication>(*args)
 }
