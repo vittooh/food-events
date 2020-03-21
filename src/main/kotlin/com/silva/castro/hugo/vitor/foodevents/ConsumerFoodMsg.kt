@@ -9,6 +9,6 @@ class ConsumerFoodMsg {
 
     @StreamListener(Sink.INPUT)
     fun reciveMsg(msg: String) {
-        println("Nos vamos comer $msg !!")
+        println("Default delivery nos vamos comer  ::: $msg !!")
     }
 }
