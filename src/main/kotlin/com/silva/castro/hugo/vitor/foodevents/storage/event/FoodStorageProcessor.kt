@@ -1,6 +1,6 @@
-package storage.event
+package com.silva.castro.hugo.vitor.foodevents.storage.event
 
-import storage.dto.StorageItemDto
+import com.silva.castro.hugo.vitor.foodevents.storage.dto.StorageItemDto
 import org.springframework.integration.support.MessageBuilder
 import org.springframework.stereotype.Component
 

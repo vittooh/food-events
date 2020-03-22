@@ -7,6 +7,6 @@ import org.springframework.boot.runApplication
 class FoodEventsApplication
 
 fun main(args: Array<String>) {
-    println("FIRE!!")
+    println("Lets go up!!")
     runApplication<FoodEventsApplication>(*args)
 }
