@@ -1,4 +1,4 @@
-package com.silva.castro.hugo.vitor.foodevents.storage.event
+package com.silva.castro.hugo.vitor.foodeventsconsumer.storage
 
 import dtos.storage.StorageItemDto
 import org.springframework.cloud.stream.annotation.EnableBinding

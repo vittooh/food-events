@@ -1,4 +1,4 @@
-package com.silva.castro.hugo.vitor.foodeventsconsumer.demo
+package com.silva.castro.hugo.vitor.foodeventsconsumer
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
