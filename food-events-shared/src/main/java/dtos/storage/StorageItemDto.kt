@@ -1,4 +1,4 @@
-package com.silva.castro.hugo.vitor.foodevents.storage.dto
+package dtos.storage
 
 class StorageItemDto(
         var name: String = "",

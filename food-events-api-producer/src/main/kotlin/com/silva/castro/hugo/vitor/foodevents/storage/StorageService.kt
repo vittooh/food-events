@@ -2,9 +2,9 @@ package com.silva.castro.hugo.vitor.foodevents.storage
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import com.silva.castro.hugo.vitor.foodevents.storage.dto.StorageItemDto
 import com.silva.castro.hugo.vitor.foodevents.storage.event.FoodStorageProcessor
 import com.silva.castro.hugo.vitor.foodevents.storage.event.FoodStorageSource
+import dtos.storage.StorageItemDto
 import java.util.logging.Logger
 
 val log: Logger = Logger.getLogger(StorageService::class.java.name)

@@ -6,9 +6,15 @@
 
     <groupId>com.silva.castro.hugo.vitor</groupId>
     <artifactId>food-events-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <revision>0.0.0</revision>
+    </properties>
 
     <modules>
+        <module>../food-events-shared</module>
         <module>../food-events-api-producer</module>
         <module>../food-events-consumer</module>
     </modules>
