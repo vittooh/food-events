@@ -3,7 +3,7 @@ package dtos.storage
 class StorageItemDto(
         var name: String = "",
         var amount: Double = 0.0,
-        var unitType: String = "KG",
+        var unitType: UnitTypes = UnitTypes.KG,
         var perishable: Boolean = false
 ) {
 
