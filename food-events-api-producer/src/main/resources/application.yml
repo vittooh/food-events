@@ -1,0 +1,16 @@
+#Porta onde a aplicação será executada
+server:
+  port: 8080
+#Configurações de conexão com a instância do RabbitMQ
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+    virtual-host: /
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: food-storage
