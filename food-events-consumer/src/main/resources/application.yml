@@ -1,0 +1,26 @@
+#Porta onde a aplicação será executada
+server:
+  port: 0
+#Configurações de conexão com a instância do RabbitMQ
+spring:
+  data:
+    mongodb:
+      password: example
+      port: 27017
+      username: root
+      database: food-events
+      authentication-database: admin
+      repositories:
+        enable: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+    virtual-host: /
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: food-storage
+          group: food-storage-group
