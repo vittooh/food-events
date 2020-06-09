@@ -13,4 +13,5 @@ spring:
     stream:
       bindings:
         output:
-          destination: food-storage
+          food-storage:
+            destination: food-storage
