@@ -8,7 +8,6 @@ Vamos considerar que não tem armazenamento infinito, logo para salvar um armaze
 
 #TODO LIST
 
-- Adicionar Mongo para criar o storage.
-- Estudar Yaml e mudar as configs do projeto.
 - Saga.
+- entender como esses binds do rabbit funcionam, fazer funcionar eu fiz.
 - Keep evolving.
