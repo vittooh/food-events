@@ -17,5 +17,6 @@
         <module>../food-events-shared</module>
         <module>../food-events-api-producer</module>
         <module>../food-events-consumer</module>
+        <module>../food-events-shipping</module>
     </modules>
 </project>

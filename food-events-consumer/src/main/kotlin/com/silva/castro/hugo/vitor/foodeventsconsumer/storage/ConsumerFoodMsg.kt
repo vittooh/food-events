@@ -13,7 +13,7 @@ class ConsumerFoodMsg {
     lateinit var storageRepository: StorageRepository
 
     @StreamListener(Sink.INPUT)
-    fun reciveMsg(storageItemDto: StorageItemDto) {
+    fun receiveMsg(storageItemDto: StorageItemDto) {
         println("Default Storage!! Vamos armazenar  ::: $storageItemDto !!")
         storageRepository.save(Storage(storageItemDto.name, storageItemDto.amount, storageItemDto.unitType, storageItemDto.perishable))
 

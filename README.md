@@ -9,5 +9,9 @@ Vamos considerar que não tem armazenamento infinito, logo para salvar um armaze
 #TODO LIST
 
 - Saga.
+ - Build e yaml, topico para escutar os eventos do food-events-consumer
+ - Criar entidade no mongo para guardar os pedidos.
+ - Rest controller,service para a api criar ordem de transportes
+ - Implementar na api: escutar topico de falha no storage e cancelar a ordem de serviço
 - entender como esses binds do rabbit funcionam, fazer funcionar eu fiz.
 - Keep evolving.
