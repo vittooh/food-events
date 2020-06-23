@@ -3,6 +3,15 @@ server:
   port: 8080
 #Configurações de conexão com a instância do RabbitMQ
 spring:
+  data:
+    mongodb:
+      password: example
+      port: 27017
+      username: root
+      database: food-events
+      authentication-database: admin
+      repositories:
+        enable: true
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -13,5 +22,7 @@ spring:
     stream:
       bindings:
         output:
-          food-storage:
+          food-storage-channel:
             destination: food-storage
+          shipping-order-channel:
+            destination: shipping-order

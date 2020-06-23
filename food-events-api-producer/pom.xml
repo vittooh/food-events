@@ -82,6 +82,11 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>2.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>com.silva.castro.hugo.vitor</groupId>
             <artifactId>food-events-shared</artifactId>
             <version>0.0.0</version>

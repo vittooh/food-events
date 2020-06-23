@@ -1,5 +1,8 @@
 package dtos.shipping
 
+import dtos.storage.StorageItemDto
+
 class ShippingOrderDto(
-        var items: MutableList<ShippingOrderItem> = mutableListOf()
+        var id: String = "",
+        var items: MutableList<StorageItemDto> = mutableListOf()
 )

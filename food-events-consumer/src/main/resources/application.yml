@@ -21,6 +21,9 @@ spring:
   cloud:
     stream:
       bindings:
-        input:
-          destination: food-storage
+        food-storage-consumer-channel:
+          destination: food-storage-channel
           group: food-storage-group
+        shipping-order-consumer-channel:
+          destination: shipping-order
+          group: shipping-order-group
