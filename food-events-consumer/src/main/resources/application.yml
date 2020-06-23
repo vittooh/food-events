@@ -25,5 +25,5 @@ spring:
           destination: food-storage-channel
           group: food-storage-group
         shipping-order-consumer-channel:
-          destination: shipping-order
+          destination: shipping-order-channel
           group: shipping-order-group

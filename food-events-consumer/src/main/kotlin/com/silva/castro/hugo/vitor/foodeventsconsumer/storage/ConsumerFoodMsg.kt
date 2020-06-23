@@ -15,7 +15,6 @@ class ConsumerFoodMsg {
 
     @StreamListener(value = "food-storage-consumer-channel")
     fun receiveMsg(storageItemDto: StorageItemDto) {
-        //todo criar 2 cusntom bind um para o storage e outro para o shipping.
         println("Default Storage!! Vamos armazenar  ::: $storageItemDto !!")
         storageRepository.save(Storage(storageItemDto.name, storageItemDto.amount, storageItemDto.unitType, storageItemDto.perishable))
     }

@@ -4,6 +4,11 @@ import org.springframework.cloud.stream.annotation.Output
 import org.springframework.messaging.MessageChannel
 
 interface ShippingOrderSource {
-    @Output("shipping-order")
-    abstract fun getShippingChannel(): MessageChannel
+
+    companion object Attrs {
+        val str = ""
+    }
+
+    @Output("shipping-order-channel")
+    fun getShippingChannel(): MessageChannel
 }
