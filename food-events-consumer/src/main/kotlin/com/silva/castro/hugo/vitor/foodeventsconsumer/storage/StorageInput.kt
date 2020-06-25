@@ -5,6 +5,10 @@ import org.springframework.messaging.MessageChannel
 
 interface StorageInput {
 
-    @Input("food-storage-consumer-channel")
+    companion object Atts{
+        const val FOOD_STORAGE_CHANNEL = "food-storage-consumer-channel"
+    }
+
+    @Input(FOOD_STORAGE_CHANNEL)
     fun receiveFoodStorageChannel(): MessageChannel
 }

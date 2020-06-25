@@ -26,3 +26,7 @@ spring:
             destination: food-storage
           shipping-order-channel:
             destination: shipping-order
+        input:
+          shipping-order-error-channel:
+            destination: shipping-order-error-channel
+            group: shipping-order-error
