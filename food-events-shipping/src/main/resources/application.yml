@@ -1,0 +1,24 @@
+server:
+  port: 0
+spring:
+  data:
+    mongodb:
+      password: example
+      port: 27017
+      username: root
+      database: food-events
+      authentication-database: admin
+      repositories:
+        enable: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+    virtual-host: /
+  cloud:
+    stream:
+      bindings:
+          shipping-order-processor-input-channel:
+            destination: shipping-order-processor
+            group: shipping-order-processor

@@ -1,5 +1,5 @@
 # food-events
-Estudando rabbimq + spring + jpa.
+Estudando rabbimq + spring + mongodb.
 
 
 A idéia é criar duas apis, uma que irá receber algumas requisições https, e criar eventos para serem processados por uma outra api e consumir o resultado dos eventos processados.
@@ -7,6 +7,22 @@ A idéia é criar duas apis, uma que irá receber algumas requisições https, e
 Vamos considerar que não tem armazenamento infinito, logo para salvar um armazenamento precisamos de confirmação que podemos fazer isso. Para garantir o fluxo/criar vamos usar o padrão saga.
 
 #TODO LIST
+
+# Checklist activities 
+
+## Storage Module :
+- Process shipping order event - check if has items on the storage to fulfill the order 
+DONE - if so, send do shipping-order-processor
+- if not, send back to api to cancel the order.
+ 
+## Api module 
+- receive error event from storage module and cancel order.
+
+## Shipping Module:
+DONE - Receive shipping order from storage module and process that.
+- Remove items from storage and build invoice.
+
+
 
 - Saga.
  - Build e yaml, topico para escutar os eventos do food-events-consumer

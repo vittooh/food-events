@@ -57,6 +57,15 @@
             <artifactId>spring-cloud-stream-test-support</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.silva.castro.hugo.vitor</groupId>
+            <artifactId>food-events-shared</artifactId>
+            <version>0.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

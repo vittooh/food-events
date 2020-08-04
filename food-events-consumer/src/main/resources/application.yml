@@ -27,3 +27,5 @@ spring:
         shipping-order-consumer-channel:
           destination: shipping-order-channel
           group: shipping-order-group
+        shipping-order-processor-channel:
+          destination: shipping-order-processor
