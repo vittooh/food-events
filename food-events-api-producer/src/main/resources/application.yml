@@ -21,12 +21,10 @@ spring:
   cloud:
     stream:
       bindings:
-        output:
-          food-storage-channel:
-            destination: food-storage
-          shipping-order-channel:
-            destination: shipping-order
-        input:
-          shipping-order-error-channel:
-            destination: shipping-order-error-channel
-            group: shipping-order-error
+        food-storage-channel:
+          destination: food-storage
+        shipping-order-channel:
+          destination: shipping-order
+        shipping-order-error-channel:
+          destination: shipping-order-error
+          group: shipping-order-error

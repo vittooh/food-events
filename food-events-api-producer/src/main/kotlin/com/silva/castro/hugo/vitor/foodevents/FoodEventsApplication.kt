@@ -11,6 +11,5 @@ import org.springframework.cloud.stream.annotation.EnableBinding
 class FoodEventsApplication
 
 fun main(args: Array<String>) {
-    println("Lets go up!!")
     runApplication<FoodEventsApplication>(*args)
 }

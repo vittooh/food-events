@@ -22,10 +22,12 @@ spring:
     stream:
       bindings:
         food-storage-consumer-channel:
-          destination: food-storage-channel
+          destination: food-storage
           group: food-storage-group
         shipping-order-consumer-channel:
-          destination: shipping-order-channel
+          destination: shipping-order
           group: shipping-order-group
         shipping-order-processor-channel:
           destination: shipping-order-processor
+        shipping-order-error-channel:
+          destination: shipping-order-error
